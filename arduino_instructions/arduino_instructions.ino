@@ -25,6 +25,8 @@ http://www.marquette.edu/biomedical-engineering/outreach.php
 Copyright (c) 2016 Samuel Bechara
 ******************************************************************************/
 
+/* The setup() function is called when a sketch starts. The setup function will
+only run once, after each powerup or reset of the Arduino board. */
 void setup()
 {
   // initialize the serial communication:
@@ -33,15 +35,20 @@ void setup()
   pinMode(11, INPUT); // Setup for leads off detection LO -
 }
 
+/* The loop() function does precisely what its name suggests, and loops
+consecutively. */
 void loop()
 {
+  // checks if the user is not connected
   if((digitalRead(10) == 1)||(digitalRead(11) == 1))
   {
+    // if they aren't connected, print ! to the serial port
     Serial.println('!');
   }
   else
   {
-    // send the value of analog input 1:
+    // Or else they ARE connected.
+    // So this line sends the value from the heart monitor to the A0 port
       Serial.println(analogRead(A0));
   }
   //Wait for a bit to keep serial data from saturating

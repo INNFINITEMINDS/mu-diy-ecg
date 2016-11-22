@@ -60,8 +60,8 @@ void setup () {
   // List all the available serial ports
   println(Serial.list());
 
-  // Open whatever port is the one you're using
-  //********** YOU MAY NEED TO CHANGE THE SERIAL PORT NUMBER!!!! ************//
+  /* Open whatever port is the one you're using
+  / YOU MAY NEED TO CHANGE THE SERIAL PORT NUMBER!!!! */
   myPort = new Serial(this, Serial.list()[0], 9600);
 
   // don't generate a serialEvent() unless you get a newline character
@@ -87,7 +87,7 @@ void serialEvent (Serial myPort) {
 
     // If leads off detection is true, notify with blue line
     if (inString.equals("!")) {
-      stroke(0, 0, 0xff); //Set stroke to blue ( R, G, B)...He's dead Jim.
+      stroke(0, 0, 0xff); //Set stroke to blue ( R, G, B)... He's dead Jim.
       inByte = 512;  // middle of the ADC range (Flat Line)
     }
 
