@@ -9,12 +9,13 @@ Written by: Samuel Bechara, PhD
             Marquette University
 
 Created: 10 November 2015
-Last Edited: 6 July 2016
-
+Last Edited: 22 November 2016
 
 Description ------------------------------------------------------------------
-This arduino code is meant to be used to interface a sparkfun redboard with a
-sparkfun heart monitor (part#: ADB232).
+This arduino code is meant to be used for the Marquette University
+Arduino outreach project. Specifically to interface a sparkfun redboard with a
+sparkfun heart monitor (part#: ADB232) and to display the results on an
+Adafruit 7 segment LED Display.
 
 This code relies heavily on libraries written by Sparkfun and Adafruit
 employees so please support them and buy their stuff!
@@ -127,7 +128,8 @@ void loop()
 				bpmCalc[2]=beatsPerMinute;
 				averageBPM = (int)((bpmCalc[0]+bpmCalc[1]+bpmCalc[2])/3);
 
-				if (averageBPM > 35) {
+				if (averageBPM > 35)
+				{
 					LEDdisplay.clear();
 					LEDdisplay.print((int)averageBPM);
 					LEDdisplay.writeDisplay();
