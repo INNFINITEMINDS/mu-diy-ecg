@@ -20,7 +20,7 @@ float inByte = 0;
 
 void setup () {
   // set the window size:
-  size(800, 300);
+  size(1000, 300);
 
   // List all the available serial ports
   // if using Processing 2.1 or later, use Serial.printArray()
