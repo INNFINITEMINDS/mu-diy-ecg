@@ -43,7 +43,7 @@ consecutively. */
 void loop()
 {
   // checks if the user is not connected
-  if((digitalRead(10) == 1)||(digitalRead(11) == 1))
+  if((digitalRead(10) == 1)||(digitalRead(YY) == 1))
   {
     // if they aren't connected, print ! to the serial port
     Serial.println('!');
