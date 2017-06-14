@@ -34,7 +34,7 @@ void setup()
 {
   // initialize the serial communication:
   Serial.begin(9600);
-  pinMode(XX, INPUT); // Setup for leads off detection LO +
+  pinMode(10, INPUT); // Setup for leads off detection LO +
   pinMode(11, INPUT); // Setup for leads off detection LO -
 }
 
@@ -43,7 +43,7 @@ consecutively. */
 void loop()
 {
   // checks if the user is not connected
-  if((digitalRead(10) == 1)||(digitalRead(YY) == 1))
+  if((digitalRead(10) == 1)||(digitalRead(11) == 1))
   {
     // if they aren't connected, print ! to the serial port
     Serial.println('!');
