@@ -23,7 +23,7 @@ You might have to change the [0] to a different number i.e.) [1] depending on ho
 This code is meant to be run using the processing IDE. It is free, open source,
 and available at [https://processing.org/](https://processing.org/)
 
-It is compatible with Processing version 3+
+It is only compatible with Processing Version 2. 
 
 ## Note
 On linux systems, you may need to change owner of the serial port to gain access
