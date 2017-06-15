@@ -24,12 +24,6 @@ This folder contains the "broken" version of the Arduino code and is intended as
 ### trace_ecg
 This folder contains the completed and correct version of the Processing code necessary to visualize and ECG. Note: you can only use processing version 2, this is not currently compatible with processing version 3 yet.
 
-## Other Folders:
-### arduino_example
-This folder contains a processing code example for development purposes only. You do not need it to run this project but does give you an idea of how to use processing. To use, open the .ino file with the Arduino IDE.
-
 ### screenshots
 This folder has some screenshots of the working processing code.
 
-### sparkfun
-Folder that contains the code provided by sparkfun.com to run with the heart rate monitor. For reference and development purposes only.
